@@ -68,14 +68,34 @@
   border-radius: 12px;
   transition: 0.3s ease;
 }
+
 .input-group:hover {
-  border-color: rgba(99, 102, 241, 0.6);
+  border-color: rgba(99, 102, 241, 0.6) !important;
   transform: scale(1.02);
 }
 .input-group .icon {
   margin-right: 10px;
   color: #a5b4fc;
   font-size: 18px;
+}
+.search-input {
+    width: 100%;
+  max-width: 1460px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px 30px;
+  border-radius: 74px;
+  transition: 0.3s ease;
+  outline: none;
+  color: white;
+  font-size: 18px;
+}
+
+.search-input:focus,
+.search-input:hover{
+  box-shadow: 5px 5px 20px rgba(99, 102, 241, 0.6);
+  border: 1px solid rgba(99, 102, 241, 0.6);
+
 }
 .input-group input {
   width: 100%;
@@ -278,8 +298,10 @@
 .dashboard {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  gap: 50px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background: #0f172a;
   overflow: hidden;
   position: relative;
