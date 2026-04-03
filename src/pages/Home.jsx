@@ -134,6 +134,7 @@ const Home = () => {
     <>
       <div className="dashboard">
         <input
+          name="search"
           className="search-input"
           type="text"
           placeholder="search a todo item..."
