@@ -116,8 +116,12 @@ const Home = () => {
     return (
       <div
         style={{
+          height: "100vh",
+          width: "100vw",
+          background: "#0f172a",
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           padding: "40px",
         }}
       >
